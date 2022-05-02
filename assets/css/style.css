@@ -32,19 +32,16 @@ body {
   background-color: pink;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%; }
-
-.nav-link {
-  opacity: 10;
-  letter-spacing: 1px;
-  font-family: 'Lemonada', cursive;
-  text-decoration: none; }
-
-ul.navbar-nav.ms-auto {
-  align-items: center;
-  text-align: -webkit-center; }
-
-.nav-link:hover {
-  font-size: larger; }
+  #navbar .nav-link {
+    opacity: 10;
+    letter-spacing: 1px;
+    font-family: 'Lemonada', cursive;
+    text-decoration: none; }
+    #navbar .nav-link:hover {
+      font-size: larger; }
+  #navbar ul.navbar-nav.ms-auto {
+    align-items: center;
+    text-align: -webkit-center; }
 
 /* Fin  de Estilos del Header */
 /* Inicio de Estilos del Footer */

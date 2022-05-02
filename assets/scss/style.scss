@@ -10,6 +10,10 @@
 }
 /* ///////////////////////////////////////////////////////////////////// */
 
+// Variables
+
+$titles-color: deeppink;
+
 /* Fuentes de Google */
 @import url('https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat&family=Playfair+Display:ital@1&display=swap');
 /* ////////////////////////////////////////////////////////////////////// */
@@ -37,20 +41,21 @@ body {
     background-color: pink;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
+    .nav-link {
+        opacity: 10;
+        letter-spacing: 1px;
+        font-family: 'Lemonada', cursive;
+        text-decoration: none;
+        &:hover{
+            font-size: larger;
+        }
+    }
+    ul.navbar-nav.ms-auto {
+        align-items: center;
+        text-align: -webkit-center;
+    }
 }
-.nav-link {
-    opacity: 10;
-    letter-spacing: 1px;
-    font-family: 'Lemonada', cursive;
-    text-decoration: none;
-}
-ul.navbar-nav.ms-auto {
-    align-items: center;
-    text-align: -webkit-center;
-}
-.nav-link:hover{
-    font-size: larger;
-}
+
 /* Fin  de Estilos del Header */
 
 /* Inicio de Estilos del Footer */
@@ -172,7 +177,7 @@ main {
 .indexTitles{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    color: deeppink;
+    color: $titles-color;
     font-weight: bolder;
     font-size: larger;
     font-style: italic;
@@ -192,7 +197,7 @@ main {
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    color: deeppink;
+    color: $titles-color;
     font-size: 250%;
     text-decoration: underline;
 }
@@ -214,7 +219,7 @@ h1 {
     justify-content: center;
     font-style: italic;
     font-size: 200%;
-    color: deeppink;
+    color: $titles-color;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
@@ -269,7 +274,7 @@ h1 {
     grid-area: title;
     justify-content: center;
     font-size: 200%;
-    color: deeppink;
+    color: $titles-color;
 }
 .imgDoctora {
     display: flex;
@@ -313,7 +318,7 @@ h1 {
     grid-area: title;
     justify-content: center;
     font-size: 200%;
-    color: deeppink;
+    color: $titles-color;
 }
 .imgProfesionales{
     display: flex;
@@ -351,7 +356,7 @@ h1 {
     grid-area: title;
     justify-content: center;
     font-size: 200%;
-    color: deeppink;
+    color: $titles-color;
 }
 .imgInstalaciones {
     display: flex;
