@@ -1,0 +1,423 @@
+@charset "UTF-8";
+/* Reinicio de Estilos */
+@import url("https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat&family=Playfair+Display:ital@1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* Fuentes de Google */
+/* ////////////////////////////////////////////////////////////////////// */
+/* Body */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-image: url(../img/Fondo-Web-01.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+/* ////////////////////////////////////////////////////////////////// */
+/* Inicio de Estilos del Header */
+.navbar-brand:hover {
+  transform: scale(1.2); }
+
+#navbar {
+  background-color: pink;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%; }
+
+.nav-link {
+  opacity: 10;
+  letter-spacing: 1px;
+  font-family: 'Lemonada', cursive;
+  text-decoration: none; }
+
+ul.navbar-nav.ms-auto {
+  align-items: center;
+  text-align: -webkit-center; }
+
+.nav-link:hover {
+  font-size: larger; }
+
+/* Fin  de Estilos del Header */
+/* Inicio de Estilos del Footer */
+.footerStyle {
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  padding: 1rem 0;
+  width: 100%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%; }
+
+.footerStyle .footerCenter {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.footerStyle .footerCenter .footerBrand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold; }
+
+.footerStyle .footerCenter .footerNav {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto; }
+
+.footerNav .redesFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  margin: 0 1rem; }
+
+.redesFooter {
+  transition: transform 2s; }
+
+.redesFooter:hover {
+  transform: rotate(360deg); }
+
+.footerNav .footerItem:hover {
+  opacity: 1; }
+
+.footerNav .footerItem .footerLink {
+  color: black; }
+
+/* Fin de Estilos del Footer */
+/* Contenedor Principal */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* Fin de Contenedor Principal */
+/* Inicio del Contenido del Index */
+#sectionOne-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "faciales masajes depilacion"; }
+
+.mainFaciales {
+  grid-area: faciales;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.mainMasajes {
+  grid-area: masajes;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.mainDepilacion {
+  grid-area: depilacion;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.imgMain {
+  width: 300px;
+  height: 200px;
+  border-radius: 25%;
+  margin-bottom: 1rem; }
+
+.mainDescription {
+  width: 50%;
+  font-style: italic;
+  text-align: justify; }
+
+.mainDescription:hover {
+  /* box-shadow: -30px 30px pink; */
+  transform: scale(1.1); }
+
+.indexTitles {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: deeppink;
+  font-weight: bolder;
+  font-size: larger;
+  font-style: italic; }
+
+.indexTitles:hover {
+  transform: scale(1.5);
+  margin-bottom: 1rem; }
+
+.mainContent:hover {
+  transform: scale(1.2); }
+
+/* Fin de Contenido del Index */
+/* Inicio Página de Productos y Servicios */
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: deeppink;
+  font-size: 250%;
+  text-decoration: underline; }
+
+.sectionServices {
+  margin: 0% 10% 10% 10%; }
+
+.servicesGrid {
+  display: grid;
+  grid-template-areas: "title title" "img description";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 2rem; }
+
+.titleServices {
+  display: flex;
+  grid-area: title;
+  justify-content: center;
+  font-style: italic;
+  font-size: 200%;
+  color: deeppink;
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
+
+.imgServices {
+  display: flex;
+  grid-area: img;
+  border-radius: 25%;
+  width: 500px;
+  height: 300px; }
+
+.descripcionServicios {
+  display: flex;
+  grid-area: description;
+  align-items: center;
+  text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding: 0% 15%; }
+
+/* Fin Página de Productos Servicios */
+/* Inicio Página de Galeria */
+.galeriaContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 1rem;
+  margin: 2rem; }
+
+/* Fin Página de Galería */
+/* Inicio de Pagina Conocenos */
+.aboutContainer {
+  margin: 1rem; }
+
+.aboutGrid1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title" "img text";
+  margin: 0% 15%;
+  grid-gap: 2rem; }
+
+.aboutTitle1 {
+  display: flex;
+  grid-area: title;
+  justify-content: center;
+  font-size: 200%;
+  color: deeppink; }
+
+.imgDoctora {
+  display: flex;
+  width: 300px;
+  height: 650px;
+  grid-area: img;
+  border-radius: 25px;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+.aboutParrafo {
+  display: flex;
+  grid-area: text;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  color: black;
+  text-align: justify;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+.aboutGrid2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title title" "text img";
+  margin: 0% 15%;
+  grid-gap: 2rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+.aboutTitle2 {
+  display: flex;
+  grid-area: title;
+  justify-content: center;
+  font-size: 200%;
+  color: deeppink; }
+
+.imgProfesionales {
+  display: flex;
+  grid-area: img;
+  width: 480px;
+  height: 300px;
+  border-radius: 25px;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+
+.profesionalesParrafo {
+  display: flex;
+  grid-area: text;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  color: black;
+  padding: 10%; }
+
+.aboutGrid3 {
+  display: grid;
+  grid-template-areas: "title title title" "img1 img2 img3" "p1 p2 p3";
+  margin: 0% 15%;
+  grid-gap: 2rem; }
+
+.aboutTitle3 {
+  display: flex;
+  grid-area: title;
+  justify-content: center;
+  font-size: 200%;
+  color: deeppink; }
+
+.imgInstalaciones {
+  display: flex;
+  width: 400px;
+  height: 300px;
+  border-radius: 25px; }
+
+.imgRecepcion {
+  grid-area: img1; }
+
+img.Consultorio {
+  grid-area: img2; }
+
+.imgSpa {
+  grid-area: img3; }
+
+.descripcionInstalaciones {
+  display: flex;
+  text-overflow: none;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem; }
+
+.desc1 {
+  grid-area: p1; }
+
+.desc2 {
+  grid-area: p2; }
+
+.desc3 {
+  grid-area: p3; }
+
+/* Fin de Pagina Conocenos */
+/* Inicio Página de Contacto */
+.rendered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* Fin de Página de Contacto */
+/* ////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .aboutGrid1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; }
+  .galeriaContainer {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 1600px) {
+  .aboutGrid2, .aboutGrid3 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; }
+  .galeriaContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem; } }
+
+@media screen and (max-width: 768px) {
+  .navigationBar {
+    justify-content: space-evenly;
+    flex-direction: column; }
+  .navBar {
+    flex-direction: column; }
+  .aboutContainer {
+    display: flex;
+    flex-direction: column; }
+  .aboutGrid1, .aboutGrid2, .aboutGrid3 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; }
+  .aboutGrid2 {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; } }
+
+@media screen and (max-width: 630px) {
+  .navigationBar .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .headerStyle {
+    width: 100%; } }
+
+@media screen and (max-width: 1024px) {
+  #sectionOne-grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem; }
+  .servicesGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .mainContent {
+    margin-bottom: 2rem; }
+  #cardsIndex {
+    flex-direction: column; } }
+
+/* Escritorios muy anchos */
