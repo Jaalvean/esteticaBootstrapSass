@@ -7,7 +7,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Lemonada', cursive;
   font-size: 16px; }
 
 /* ///////////////////////////////////////////////////////////////////// */
@@ -151,7 +151,7 @@ main {
   transform: scale(1.1); }
 
 .indexTitles {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lemonada", cursive;
   text-align: center;
   color: deeppink;
   font-weight: bolder;
@@ -168,7 +168,7 @@ main {
 /* Fin de Contenido del Index */
 /* Inicio Página de Productos y Servicios */
 h1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lemonada", cursive;
   text-align: center;
   color: deeppink;
   font-size: 250%;
@@ -192,7 +192,8 @@ h1 {
   font-size: 200%;
   color: deeppink;
   margin-top: 3rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-family: "Lemonada", cursive; }
 
 .imgServices {
   display: flex;
@@ -330,7 +331,7 @@ img.Consultorio {
   display: flex;
   text-overflow: none;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lemonada", cursive;
   margin-bottom: 2rem; }
 
 .desc1 {
