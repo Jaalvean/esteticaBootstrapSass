@@ -1,0 +1,35 @@
+$redes: (
+    Whatsapp: green,
+    Facebook: Blue,
+    Instagram: Red,
+);
+
+// .botonWhatsapp {
+//     color: map-get($map: $redes, $key: Whatsapp);
+// }
+
+// .botonFacebook {
+//     color: map-get($redes , Facebook);
+// }
+
+// .botonInstagram {
+//     color: map-get($redes , Instagram);
+// }
+
+@for $i from 1 through 10 {
+    .col-#{$i} {
+        width: 10% * $i;
+    }
+}
+
+@each $colorActual in green, yellow, black{
+    .#{$colorActual} {
+        color: #{$colorActual};
+    }
+}
+
+@each $red, $color in $redes {
+    .boton#{$red} {
+        color: $color;
+    }
+}
