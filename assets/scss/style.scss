@@ -9,6 +9,9 @@
     font-size: 16px;
 }
 /* ///////////////////////////////////////////////////////////////////// */
+// Imports de SASS
+@import "./mixins";
+@import "./maps";
 
 /* Fuentes de Google */
 @import url('https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat&family=Playfair+Display:ital@1&display=swap');
@@ -73,6 +76,7 @@ ul.navbar-nav.ms-auto {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 .footerStyle .footerCenter .footerBrand {
     display: flex;
@@ -108,6 +112,7 @@ ul.navbar-nav.ms-auto {
 .footerNav .footerItem .footerLink {
     color: black;
 }
+
 /* Fin de Estilos del Footer */
 
 /* Contenedor Principal */
@@ -194,7 +199,7 @@ h1 {
     text-align: center;
     color: deeppink;
     font-size: 250%;
-    text-decoration: underline;
+    margin-top: 5%;
 }
 .sectionServices {
     margin: 0% 10% 10% 10%;
@@ -393,6 +398,24 @@ img.Consultorio {
     flex-direction: column;
     align-items: center;
 }
+.h2subtitle{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: deeppink;
+        margin-top: 2%;
+        margin-bottom: 2%;
+}
+.lastSection{
+    width: 100%;
+}
+.redesBox{
+    margin: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.redSocial {margin: 2%;
+}
+
 /* Fin de Página de Contacto */
 /* ////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* Media Queries */

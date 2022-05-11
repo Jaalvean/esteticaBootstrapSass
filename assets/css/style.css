@@ -11,6 +11,60 @@
   font-size: 16px; }
 
 /* ///////////////////////////////////////////////////////////////////// */
+.formBox {
+  border-radius: 25px;
+  border: 10px solid deeppink;
+  padding: 10%;
+  margin: 10%; }
+
+.col-1 {
+  width: 10%; }
+
+.col-2 {
+  width: 20%; }
+
+.col-3 {
+  width: 30%; }
+
+.col-4 {
+  width: 40%; }
+
+.col-5 {
+  width: 50%; }
+
+.col-6 {
+  width: 60%; }
+
+.col-7 {
+  width: 70%; }
+
+.col-8 {
+  width: 80%; }
+
+.col-9 {
+  width: 90%; }
+
+.col-10 {
+  width: 100%; }
+
+.green {
+  color: green; }
+
+.yellow {
+  color: yellow; }
+
+.black {
+  color: black; }
+
+.botonWhatsapp {
+  color: green; }
+
+.botonFacebook {
+  color: Blue; }
+
+.botonInstagram {
+  color: Red; }
+
 /* Fuentes de Google */
 /* ////////////////////////////////////////////////////////////////////// */
 /* Body */
@@ -65,7 +119,8 @@ ul.navbar-nav.ms-auto {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
 
 .footerStyle .footerCenter .footerBrand {
   display: flex;
@@ -175,7 +230,7 @@ h1 {
   text-align: center;
   color: deeppink;
   font-size: 250%;
-  text-decoration: underline; }
+  margin-top: 5%; }
 
 .sectionServices {
   margin: 0% 10% 10% 10%; }
@@ -351,6 +406,24 @@ img.Consultorio {
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+.h2subtitle {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: deeppink;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+.lastSection {
+  width: 100%; }
+
+.redesBox {
+  margin: 2%;
+  display: flex;
+  justify-content: space-evenly; }
+
+.redSocial {
+  margin: 2%; }
 
 /* Fin de Página de Contacto */
 /* ////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */

@@ -1,3 +1,5 @@
+
+
 // Toggles
 //
 // Used in conjunction with global variables to enable certain theme features.
@@ -41,3 +43,14 @@
 @import "mixins/clearfix";
 @import "mixins/container";
 @import "mixins/grid";
+
+@mixin formBox ($radius, $borderline, $relleno, $margen){
+    border-radius: $radius;
+    border: $borderline;
+    padding: $relleno;
+    margin: $margen;
+}
+
+.formBox {
+    @include formBox(25px, 10px solid deeppink, 10%, 10%)
+}
